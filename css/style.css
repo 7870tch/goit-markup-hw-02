@@ -113,6 +113,7 @@ text-transform: uppercase;
 
 /*====================HERO================*/
 .modal-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -150,6 +151,7 @@ width: 1440px;
 
 /*========== Hero-Portfolio=============*/
 .modal-button {
+  font-family: inherit;
   font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -185,8 +187,8 @@ cursor: pointer;
 
 .footer {
 background-color: var(--accent-color-dark-fon);
-width: 1440px;
 color: #E7E9FC;
+width: 1440px;
 }
  
 /*=========FOOTER======*/
