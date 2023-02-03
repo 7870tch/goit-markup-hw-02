@@ -115,6 +115,7 @@ text-transform: uppercase;
   text-transform: uppercase;
   color: #ffffff;
   background: #4D5AE5;
+  
  
 }
 
@@ -125,6 +126,7 @@ text-transform: uppercase;
 .modal-button:focus {
   background-color:#404bbf;
   color: #ffffff;
+  cursor: pointer;
 }
  
   
