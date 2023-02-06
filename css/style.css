@@ -1,4 +1,4 @@
-
+/*===========Root=========*/
 :root {
 
   --primary-font: 'Roboto', sans-serif;
@@ -9,6 +9,26 @@
   --button-normal:#E7E9FC;
 }
 
+/*===================All===============*/
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+
+ ul,
+ ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+ }
+
+ img {
+  display: block;
+ }
 
 .list {
   list-style: none;
@@ -27,6 +47,30 @@ font-family: var(--primary-font);
 color: #2E2F42;
 }
 
+.sections {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+
+/*==================HEADER================*/
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+
 .tel, .mail {
   font-style: normal;
   font-weight: 500;
@@ -34,6 +78,8 @@ color: #2E2F42;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:var(--color-title);
+  margin-right: 40px;
+  
 }
 .tel .mail:hover,
 .tel .mail:focus {
@@ -45,11 +91,33 @@ color: #2E2F42;
   letter-spacing: 0.03em;
   color:#4D5AE5;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
 }
   
 
 .accent {
   color: #2E2F42;
+}
+
+
+
+.page-header-container {
+display: flex ;
+align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.menu-item:not(:last-child){
+  margin-right: 40px;
 }
 
 
@@ -60,6 +128,9 @@ color: #2E2F42;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-title);
+  display: flex;
+  align-items: center;
+  
 }
 
 .menu .link:hover,
@@ -74,10 +145,12 @@ color: #2E2F42;
 .active {
   color: #4D5AE5;
 }
-
+/*-------------------HERO------------------*/
 .hero {
   width: 1440px;
   background-color: var(--color-title);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-title {
@@ -97,13 +170,21 @@ color: #2E2F42;
     background-color: #4D5AE5;
 }
 
+.modal-btn {
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 16px;
+  display: flex;
+ 
+  border-radius: 4px;
+}
 .modal-btn:hover,
 .modal-btn:focus {
 background-color: var(--focuc);
 color: #ffffff;
-
 }
-
+/*----------------------------PORTFOLIO HERO---------------*/
 .button,
 .modal-button {
   color: #4D5AE5;
@@ -117,6 +198,7 @@ color: #ffffff;
   color: #ffffff;
   background-color: var(--focuc);
 }
+/*----------------------------MAin Page---------------*/
 .title-item { 
   font-weight: 500;
     font-size: 20px;
@@ -128,7 +210,11 @@ color: #ffffff;
 .text-item {
   color:var(--text400);
 }
-  
+
+.list-calc5 {
+  flex-basis: calc(100%-72px)/4;
+}
+ /*----------------SECTION TWO--------------------*/ 
 .content-title {
   font-weight: 700;
   font-size: 36px;
@@ -137,6 +223,10 @@ color: #ffffff;
   color: var(--text400);
 }
 
+.list-calc1 {
+  flex-basis:calc(100%-48px)/3;
+}
+/*------------------SECTION THREE----------------*/
 .staff-section {
   background-color: #F4F4FD;
 }
@@ -152,9 +242,26 @@ color: #ffffff;
   color: var(--text400);
 }
 
+.list-calc2 {
+  flex-basis: calc(100%-72px)/4;
+}
+
+
+/*============Section Portfolio==================*/
+
+.list-calc3 {
+  flex-basis: calc(100%-96px)/5;
+}
+
+.list-calc4 {
+  flex-basis: calc(100%-48px)/3;
+}
+/*-----------------FOTER-------------------------*/
 .footer {
   background: #2E2F42;
   width: 1440px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .accent-footer {
   color: #F4F4FD;
